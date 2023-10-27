@@ -1,0 +1,31 @@
+{
+  "name": "react-show-me-divs",
+  "version": "1.0.0",
+  "private": false,
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "description": "Visualizes any html elements by colorizing them",
+  "main": "ShowMyDivs.jsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psychosoft/react-show-my-divs.git"
+  },
+  "keywords": [
+    "react",
+    "debug",
+    "visualize",
+    "html",
+    "div",
+    "elements"
+  ],
+  "author": "Robert Wallén",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psychosoft/react-show-my-divs/issues"
+  },
+  "homepage": "https://github.com/psychosoft/react-show-my-divs#readme",
+  "scripts": {
+    "build": "tsc"
+  }
+}
