@@ -2,7 +2,7 @@ import React from "react";
 
 export const ShowMyDivs = ({
   children,
-  HTMLTypeNames = ["div"],
+  HTMLTypeNames = ["all"],
   colors = [
     "#4D4D4D",
     "#999999",
@@ -40,25 +40,27 @@ export const ShowMyDivs = ({
     "#0062B1",
     "#653294",
     "#AB149E",
-  ]
+  ],
+    border
 }) => {
   function recursiveMap(children) {
     return React.Children.toArray(children).map((child) => {
       if (child["props"]?.children) {
-        let childProps = HTMLTypeNames.some((a) => a == child["type"])
+        let childProps = HTMLTypeNames.some((a) => HTMLTypeNames.some((e) => 'all') || a == child["type"])
           ? {
               ...child["props"],
               ...{
-                className: "",
                 style: {
                   backgroundColor:
-                    colors[Math.floor(Math.random() * colors.length - 1)],
+                    colors[Math.floor(Math.random() * colors.length )],
+                  borderStyle: 'solid',
+                  borderWidth: border ? 0 : 1,
+                  borderColor: colors[Math.floor(Math.random() * colors.length)],
                 },
               },
             }
           : child["props"];
         child = React.cloneElement(
-          // @ts-ignore
           child,
           childProps,
           recursiveMap(child["props"]?.children),
