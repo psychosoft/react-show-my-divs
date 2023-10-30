@@ -1,12 +1,12 @@
 # react-show-my-divs
 
-## Simplifies visual debugging by colorizing any HTML elements.
+## Simplifies visual debugging by recursively colorizing any HTML elements.
 
 ### This is a visual debugging tool for react developers.
 
 `npm install react-show-my-divs`
 
-`import { ShowMyDivs } from "react-show-me-divs";`
+`import { ShowMyDivs } from "react-show-my-divs";`
 
 ### Wrap anything in `<ShowMyDivs> ... </ShowMyDivs>` and your divs will shine!
 

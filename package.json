@@ -1,6 +1,6 @@
 {
-  "name": "react-show-me-divs",
-  "version": "1.0.0",
+  "name": "react-show-my-divs",
+  "version": "1.0.1",
   "private": false,
   "peerDependencies": {
     "react": "^16.0.0"
